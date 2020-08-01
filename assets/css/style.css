@@ -48,7 +48,6 @@ h6 {
     position: relative;
     margin: 0 auto;
     margin-top: 127px;
-    width: 1030px;
     height: 547px;
 
 }
@@ -56,7 +55,8 @@ h6 {
 .container {
     display: flex;
     flex-direction: column;
-    width: 1030px;
+    max-width: 1030px;
+    margin: 0 auto;
     height: 547px;
 }
 
@@ -91,10 +91,33 @@ h6 {
     color: rgba(43, 42, 43, 0.65);
 }
 
+.nameMin {
+    display: none;
+}
+
+.numberMin {
+    display: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: right;
+}
+
+.total-slidesMin {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(43, 42, 43, 0.65);
+}
+
 .slideContent {
     position: relative;
     display: flex;
-
+    flex-wrap: wrap;
 }
 
 .contentImg {
@@ -168,6 +191,7 @@ h6 {
     border-radius: 10px;
 }
 
+
 .btn-description {
     font-family: Roboto;
     font-style: normal;
@@ -226,6 +250,7 @@ Ellipse2 {
     justify-content: center;
     align-items: center;
     width: 100%;
+    margin-top: auto
 }
 
 .arrowleft {
@@ -244,7 +269,7 @@ Ellipse2 {
     font-size: 18px;
     line-height: 21px;
     color: #2B2A2B;
-    margin-right: 35px;
+    margin-right: 3%;
 }
 
 .controlNext {
@@ -254,5 +279,218 @@ Ellipse2 {
     font-size: 18px;
     line-height: 21px;
     color: #2B2A2B;
-    margin-left: 35px;
+    margin-left: 3%;
 }
+
+.slide-block.active {
+    min-width: 100%;
+}
+
+@media only screen and (max-width: 1090px) {
+    .content-block {
+        margin-top: 70px;
+    }
+
+    @media all and (max-width:804px) {
+
+        .tablet,
+        .phone {
+            display: none;
+        }
+    }
+
+    @media all and (max-width:804px) {
+
+        .slideContent {
+            justify-content: left;
+            margin-left: 15px;
+        }
+    }
+
+    @media all and (max-width:804px) {
+        .contentText {
+            text-align: left;
+            width: auto;
+            align-content: left;
+            margin: 0 auto;
+            margin-left: 30px;
+        }
+    }
+
+    @media all and (max-width:478px) {
+        .contentImg::after {
+            height: 300px;
+            width: 300px;
+        }
+
+    }
+
+    @media all and (max-width:804px) {
+        .management {
+            margin-top: 6%;
+            position: absolute;
+            top: 27%;
+            justify-content: space-between;
+        }
+    }
+
+    @media all and (max-width:804px) {
+        .Ellipse {
+            display: none
+        }
+    }
+
+    @media screen and (max-width:1000px) {
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+    }
+
+    @media all and (max-width:804px) {
+
+        .Ellipse2,
+        .Ellipse3,
+        .Ellipse4,
+        .Ellipse5,
+        .Ellipse6,
+        .Ellipse7,
+        .Ellipse8,
+        .Ellipse9,
+        .Ellipse10 {
+            display: none
+        }
+    }
+
+    @media all and (max-width:804px) {
+
+        .Ellipse1,
+        Ellipse2 {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+    @media all and (max-width:804px) {
+
+        .header {
+            margin-top: 30px;
+            width: auto;
+        }
+    }
+
+    @media all and (max-width:804px) {
+
+        .controlBack,
+        .controlNext {
+
+            display: none;
+        }
+    }
+
+    @media all and (max-width:804px) {
+
+        .btn {
+            width: 141px;
+            height: 38px;
+            margin-top: 40px;
+        }
+    }
+}
+
+@media all and (max-width:804px) {
+    .btn-description {
+        font-size: 14px;
+    }
+
+}
+
+@media all and (max-width:804px) {
+    .subDescription {
+        margin-top: 20px;
+    }
+}
+
+@media all and (max-width:804px) {
+    .name {
+        margin-left: 30px;
+    }
+}
+
+@media all and (max-width:804px) {
+
+    .arrowleft,
+    .arrowRight {
+        position: absolute;
+    }
+}
+
+@media all and (max-width:804px) {
+    .arrowleft {
+        position: relative;
+        left: 0;
+        transform: scale(0.7) rotate(180deg);
+        background-color: white;
+        padding: 20px 20px;
+        border-radius: 20px;
+        opacity: 0.8;
+
+    }
+
+    @media all and (max-width:804px) {
+        .arrowRight {
+            position: relative;
+            left: 0;
+            transform: scale(0.7);
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 20px;
+            opacity: 0.8;
+
+        }
+
+        @media all and (max-width:804px) {
+            .monitor {
+                margin-left: 22px;
+            }
+        }
+
+        @media all and (max-width:804px) {
+            .header {
+                text-align: left;
+                margin-left: 30px;
+            }
+        }
+
+        @media all and (max-width:400px) {
+            .header {
+                text-align: left;
+                margin-left: 0px;
+            }
+        }
+
+        @media all and (max-width:400px) {
+            .monitor {
+                margin-left: -12px;
+            }
+        }
+
+        @media all and (max-width:400px) {
+            .name {
+                margin-left: 0px;
+            }
+        }
+
+        @media all and (max-width:400px) {
+            .contentText {
+                margin-left: 0px;
+            }
+        }
+@media all and (max-width:400px) {
+        .contentImg::after {
+            width:270px ;
+            height:270px ;
+            margin-left: -30px;
+    }
